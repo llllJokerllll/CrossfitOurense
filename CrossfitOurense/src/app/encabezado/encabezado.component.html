@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inscripción</a>
+          <a class="nav-link active" aria-current="page" routerLink="/">Inscripción</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="#">Ver Inscripciones</a>
@@ -19,24 +19,14 @@
             Clientes
           </a>
           <ul class="dropdown-menu" *dropdownMenu aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Agregar</a></li>
+            <li><a class="dropdown-item" routerLink="/agregar-cliente">Agregar</a>
+            </li>
             <hr class="dropdown-divider">
             <li><a class="dropdown-item" routerLink="/listado-clientes">Ver Cliente</a></li>
           </ul>
         </li>
-        <li class="nav-item dropdown" dropdown>
-          <a class="nav-link dropdown-toggle" dropdownToggle href="#" id="precios" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Precios
-          </a>
-          <ul class="dropdown-menu" *dropdownMenu aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Agregar</a></li>
-            <hr class="dropdown-divider">
-            <li><a class="dropdown-item" href="#">Ver Precios</a></li>
-          </ul>
-        </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Usuarios</a>
+          <a class="nav-link" aria-current="page" routerLink="/precios">Precios</a>
         </li>
         <li class="nav-item dropdown" dropdown>
           <a class="nav-link dropdown-toggle" dropdownToggle href="#" id="reportes" role="button"
