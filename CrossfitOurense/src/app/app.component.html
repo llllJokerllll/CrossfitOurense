@@ -1,7 +1,6 @@
-<div *ngIf="usuario && !cargando; else showLogin">
+<div *ngIf="usuario && !cargando; else showLogin" class="container" id="imagenFondo">
   <app-encabezado></app-encabezado>
   <router-outlet></router-outlet>
-
 </div>
 
 <ng-template #showLogin>

@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { LoginComponent } from './login/login.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
@@ -22,6 +22,8 @@ import { MensajesService } from './services/mensajes.service';
 import { PreciosComponent } from './precios/precios.component';
 import { InscripcionComponent } from './inscripcion/inscripcion.component';
 import { SeleccionarClienteComponent } from './seleccionar-cliente/seleccionar-cliente.component';
+import { ListadoInscripcionesComponent } from './listado-inscripciones/listado-inscripciones.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { SeleccionarClienteComponent } from './seleccionar-cliente/seleccionar-c
     PreciosComponent,
     InscripcionComponent,
     SeleccionarClienteComponent,
+    ListadoInscripcionesComponent,
+    InicioComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +45,7 @@ import { SeleccionarClienteComponent } from './seleccionar-cliente/seleccionar-c
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebase),
     ReactiveFormsModule,
+    FormsModule,
     NgxSpinnerModule,
     CollapseModule.forRoot(),
     BsDropdownModule.forRoot(),
